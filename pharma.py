@@ -17,6 +17,17 @@ class PharmacyManagementSystem:
         button1 =tk.Button(self.root,image=self.photoimage1,borderwidth=0)
         button1.place(x=70,y=20)
         
+        DataFrame=tk.Frame(self.root,bd=15,relief=tk.RIDGE,padx=20)
+        DataFrame.place(x=0,y=120,width=1900,height=400)
+        
+        DataFrameLeft =tk.LabelFrame(DataFrame,bd=10,relief=tk.RIDGE,padx=20,text="Medicine Information",
+                                     fg="darkgreen",font=("arial",12,"bold"))
+        DataFrameLeft.place(x=0,y=5,width=1100,height=350)
+        
+        DataFrameRight =tk.LabelFrame(DataFrame,bd=10,relief=tk.RIDGE,padx=20,text="New Medicine Add Department",
+                                     fg="darkgreen",font=("arial",12,"bold"))
+        DataFrameRight.place(x=1110,y=5,width=700,height=350)
+        
         
 
 
